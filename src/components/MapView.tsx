@@ -14,14 +14,19 @@ interface MapViewProps {
 
 const MapWrapper = styled.div`
   flex: 1;
-  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+ display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
 `;
 
 const createCustomIcon = (color: string) => {
   return L.divIcon({
-    html: `<div style="background-color:${color}; width: 24px; height: 24px; border-radius: 50%; border: 2px solid black;"></div>`,
+    html: `<div style="background-color:${color}; width: 8px; height: 8px; border-radius: 50%; border: 2px solid black;"></div>`,
     className: 'custom-div-icon',
-    iconSize: L.point(24, 24),
+    iconSize: L.point(4, 4),
     iconAnchor: [12, 24],
     popupAnchor: [0, -24],
   });
@@ -54,7 +59,7 @@ const MapView: React.FC<MapViewProps> = ({
 
   useEffect(() => {
     if (selectedProvince === 'همه استان‌ها' && mapRef.current) {
-      mapRef.current.flyTo([32.4279, 53.6880], 6); // زوم اوت به نقشه ایران با انیمیشن
+      mapRef.current.flyTo([32.4279, 53.6880], 5); // زوم اوت به نقشه ایران با انیمیشن
     } else {
       const province = iranProvinces.find((p) => p.name === selectedProvince);
       if (province && mapRef.current) {
@@ -67,13 +72,12 @@ const MapView: React.FC<MapViewProps> = ({
     (selectedProvince === 'همه استان‌ها' || project.province === selectedProvince) &&
     (selectedProjectType === 'همه' || project.type === selectedProjectType)
   );
-
   return (
     <MapWrapper>
       <MapContainer
         center={[32.4279, 53.6880]}
-        zoom={6}
-        className="map-view"
+        zoom={5}
+        className="map-container"
         ref={mapRef}
       >
         <TileLayer

@@ -6,12 +6,19 @@ body {
 }
 
 #root {
+
+  align-items: center;
+  display: flexbox;
   height: 100vh;
+display: block;
+
+  align-items: center; 
 }
 
 .map-view {
-  width: 100%;
-  height: calc(100vh - 60px);
+  width: 80%;
+  height: calc(100vh - 30%);
+
 }
 
 .panel-container {
@@ -85,3 +92,15 @@ select:focus {
   color: green;
 }
 
+
+.map-container {
+  flex: 1;
+  width: 90%; /* کمتر کردن عرض نقشه */
+  max-width: 1200px; /* حداکثر عرض نقشه */
+  height: calc(100vh - 150px); /* کوتاه‌تر کردن ارتفاع نقشه */
+  background-color: #e0ffe0; /* پس‌زمینه سبز روشن برای نقشه */
+  border: 2px solid #006400; /* حاشیه سبز تیره برای نقشه */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

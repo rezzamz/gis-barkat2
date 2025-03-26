@@ -8,7 +8,6 @@ interface FilterPanelProps {
   onProvinceChange: (province: string) => void;
   onProjectTypeChange: (projectType: string) => void;
 }
-
 const PanelContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -31,12 +30,14 @@ const Select = styled.select`
   transition: all 0.3s ease;
   color: #004d00; /* سبز تیره */
   outline: none;
+  
 
   &:focus {
     border-color: #004d00; /* سبز تیره */
     box-shadow: 0 0 5px rgba(0, 77, 0, 0.3);
   }
 `;
+
 
 const FilterPanel: React.FC<FilterPanelProps> = ({
   selectedProvince,

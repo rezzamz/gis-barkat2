@@ -7,40 +7,50 @@ body {
 
 #root {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.map-view {
-  width: 100%;
-  height: calc(100vh - 60px);
+.map-container {
+
+  flex: 1;
+  width: 90%;
+  align-items: center;
+  background-color: #e0ffe0; /* پس‌زمینه سبز روشن برای نقشه */
+  border: 2px solid #006400; /* حاشیه سبز تیره برای نقشه */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .panel-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  background-color: #ffffff;
+  max-width: 80%;
+  padding: 10px; /* کوچک‌تر کردن بخش فیلتر */
+  background-color: #004d00; /* سبز تیره */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  margin: 20px;
+  margin: 10px; /* کوچک‌تر کردن حاشیه‌ها */
 }
 
 select {
-  margin: 0 10px;
-  padding: 10px;
-  font-size: 16px;
+  margin: 0 5px; /* کوچک‌تر کردن حاشیه‌های داخلی سلکت */
+  padding: 5px; /* کوچک‌تر کردن پدینگ سلکت */
+  font-size: 14px; /* کوچک‌تر کردن فونت سلکت */
   border: 1px solid #ddd;
   border-radius: 4px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  color: #006400; /* سبز تیره */
+  color: #004d00; /* سبز تیره */
   outline: none;
 }
 
 select:focus {
-  border-color: #006400; /* سبز تیره */
-  box-shadow: 0 0 5px rgba(0, 100, 0, 0.3);
+  border-color: #004d00; /* سبز تیره */
+  box-shadow: 0 0 5px rgba(0, 77, 0, 0.3);
 }
 
 .navbar {
@@ -48,10 +58,10 @@ select:focus {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #006400; /* سبز تیره */
+  background-color: #004d00; /* سبز تیره */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 10px; /* کوچک‌تر کردن حاشیه پایین */
 }
 
 .navbar h1 {
@@ -128,3 +138,4 @@ select:focus {
     margin: 10px 0;
   }
 }
+
