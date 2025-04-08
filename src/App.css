@@ -28,28 +28,28 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 80%;
-  padding: 10px; /* کوچک‌تر کردن بخش فیلتر */
-  background-color: #004d00; /* سبز تیره */
+  padding: 10px; 
+  background-color: #004d00; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  margin: 10px; /* کوچک‌تر کردن حاشیه‌ها */
+  margin: 10px; 
 }
 
 select {
-  margin: 0 5px; /* کوچک‌تر کردن حاشیه‌های داخلی سلکت */
-  padding: 5px; /* کوچک‌تر کردن پدینگ سلکت */
-  font-size: 14px; /* کوچک‌تر کردن فونت سلکت */
+  margin: 0 5px; 
+  padding: 5px; 
+  font-size: 14px; 
   border: 1px solid #ddd;
   border-radius: 4px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  color: #004d00; /* سبز تیره */
+  color: #004d00; 
   outline: none;
 }
 
 select:focus {
-  border-color: #004d00; /* سبز تیره */
+  border-color: #004d00; 
   box-shadow: 0 0 5px rgba(0, 77, 0, 0.3);
 }
 
@@ -58,10 +58,10 @@ select:focus {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #004d00; /* سبز تیره */
+  background-color: #004d00; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  margin-bottom: 10px; /* کوچک‌تر کردن حاشیه پایین */
+  margin-bottom: 10px; 
 }
 
 .navbar h1 {
@@ -92,7 +92,7 @@ select:focus {
 }
 
 .navbar ul li a:hover {
-  color: #00ff00; /* سبز روشن */
+  color: #00ff00;
 }
 
 @media (max-width: 768px) {

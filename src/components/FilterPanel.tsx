@@ -13,27 +13,27 @@ const PanelContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background-color: #004d00; /* سبز تیره */
+  background-color: #004d00; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  margin: 10px; /* کوچک‌تر کردن حاشیه‌ها */
+  margin: 10px; 
 `;
 
 const Select = styled.select`
-  margin: 0 5px; /* کوچک‌تر کردن حاشیه‌های داخلی سلکت */
-  padding: 5px; /* کوچک‌تر کردن پدینگ سلکت */
-  font-size: 14px; /* کوچک‌تر کردن فونت سلکت */
+  margin: 0 5px; 
+  padding: 5px; 
+  font-size: 14px; 
   border: 1px solid #ddd;
   border-radius: 4px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  color: #004d00; /* سبز تیره */
+  color: #004d00; 
   outline: none;
   
 
   &:focus {
-    border-color: #004d00; /* سبز تیره */
+    border-color: #004d00; 
     box-shadow: 0 0 5px rgba(0, 77, 0, 0.3);
   }
 `;
